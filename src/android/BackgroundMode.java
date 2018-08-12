@@ -79,7 +79,8 @@ public class BackgroundMode extends CordovaPlugin {
 
     @Override
     protected void pluginInitialize() {
-        BackgroundExt.addWindowFlags(cordova.getActivity());
+        // arx: commented to fix problem with the app being "over the lock display"
+        // BackgroundExt.addWindowFlags(cordova.getActivity());
     }
 
     // codebeat:disable[ABC]
